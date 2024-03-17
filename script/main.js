@@ -25,3 +25,4 @@ setInterval(tanggal, 1000);
 
 // Memanggil fungsi tanggal sekali saat halaman dimuat
 tanggal();
+

@@ -134,3 +134,9 @@ body {
   border: 1px solid #ccc; /* Menetapkan border dengan warna abu-abu */
   border-radius: 5px; /* Mengatur sudut border menjadi sedikit bulat */
 }
+
+marquee {
+  width: 100%;
+  padding: 10px;
+  color: black;
+}
