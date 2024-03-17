@@ -1,0 +1,136 @@
+*{
+  margin: 0; /*mengatur margin dari setiap elemen di halaman web*/
+  padding: 0;  /*mengatur margin dari setiap elemen di halaman web */
+  box-sizing: border-box; /* mengatur box model dari setiap elemen menjadi border-box*/
+}
+
+body {
+  display: flex; /*mengatur elemen body menggunakan tata letak flexbox*/
+  height: 100vh; /* mengatur tinggi elemen menjadi 100%*/
+  align-items: center; /*elemen di dalam body akan diatur secara vertikal*/
+  justify-content: center; /* elemen di dalam body akan diatur secara horizontal*/
+}
+
+.Hero {
+  position: relative; /*mengatur posisi dari kelas hero menjadi relatif*/
+  overflow: hidden; /*mengatur overflow dari elemen kelas hero*/
+}
+
+.Hero img {
+  display: block; /*mengatur gaya gambar menjadi blok*/
+}
+
+.main img{
+  width: 1100px; /*mengatur lebar dari gambar*/
+}
+.container {
+  position: absolute; /*mengatur posisi elemen menjadi absolut*/
+  background-image: linear-gradient(to right,#578456,#374e36, #1f3225); /*mengatur background dengan gradient warna hijau ke hijau lebih gelap dari kiri ke kanan*/
+  top: 50%;  /* mengatur posisi atas elemen */
+  left: 50%; /* mengatur posisi kiri elemen */
+  transform: translate(-50%, -50%); /* menggeser titik tengah (pusat) elemen container ke titik tengah layar, memberikan efek tampilan yang terpusat secara vertikal dan horizontal*/
+  text-align: center;  /*Mengatur teks pada container agar bertebar rata*/
+  box-shadow: 10px 10px 5px rgb(175, 204, 214); /*menambahkan bayangan kotak pada elemen*/
+  margin-top: 30px; /* memberi jarak atas konten*/
+  width: 62%; /* Menentukan lebar elemen container */
+  height: 62%; /* Menentukan tinggi elemen container */
+}
+
+
+.card img{
+  width: 300px; /* mengatur lebar gambar*/
+  margin-left: 5px; /* memberikan margin di sebelah kiri gambar*/
+  margin-top: 10px; /* memberikan margin di atas gambar*/
+}
+
+.text {
+  margin-top: 5px; /* memberikan jarak/margin atas teks*/
+  color: #d9ebd9; /* memberikan warna pada teks didalam elemen */
+}
+
+
+.text h1{
+  font-size: 45px;  /*memberikan ukuran huruf untuk elemen <h1>*/
+  margin-bottom: 5px; /* memberikan margin pada bagian bawah text <h1>*/
+}
+
+.text p {
+  font-size: 16.5px; /* memberikan ukuran huruf pada elemen p*/
+  color: aliceblue; /* memberikan warna pada teks didalam elemen p*/
+  margin: 0px 15px 10px 15px; /*memberikan margin di atas, kanan, bawah, dan kiri elemen p*/
+}
+
+.text h1 span{
+  color:#fffb00; /* memberikan warna teks untuk elemen h1 span atau text yang berada diantara <span></span>*/
+  font-family: 'Lucida Handwriting', cursive; /*mengatur jenis font*/
+  font-size: 38px; /*emberikan ukuran huruf pada elemen h1 span*/
+}
+/* CSS untuk menata formulir login di sebelah kanan gambar */
+.container {
+  display: flex; /*mengatur elemen body menggunakan tata letak flexbox*/
+  align-items: center; /*elemen di dalam body akan diatur secara vertikal*/
+}
+
+.card {
+  flex: 1; /* Elemen .card memperluas dirinya sebanyak mungkin di dalam kontainer flex */
+  margin-right: 10px; /* Jarak antara gambar dan formulir login */
+}
+
+.login-form {
+  flex: 1;/* Elemen .login-form memperluas dirinya sebanyak mungkin di dalam kontainer flex */
+  margin-left: 30px; /* Jarak antara formulir login dan konten lainnya */
+}
+.login-form p {
+  position: absolute; /* Menetapkan posisi absolut */
+  bottom: 10px; /* Menempatkannya 10 piksel dari bawah */
+  font-size: 13px; /* memberikan ukuran huruf pada elemen p*/
+  color: white; /* memberikan warna pada teks didalam elemen p*/
+}
+
+.login-form h2 {
+  margin-bottom: 10px;/* memberikan margin pada bagian bawah text h2*/
+  color: #d9ebd9; /* memberikan warna pada teks didalam elemen h2*/
+  font-size: 30px;  /* memberikan ukuran huruf pada elemen h2*/
+}
+
+.login-form button{
+  width: calc(100% - 50px); /* Mengurangi padding kiri dan kanan dari input */
+  padding: 5px; /* Tetapkan padding atas dan bawah */
+  padding-left: 10px; /* Tetapkan padding kiri */
+  border: 1px solid #ccc; /* Menetapkan border dengan warna abu-abu */
+  border-radius: 5px; /* Mengatur sudut border menjadi sedikit bulat */
+  background-color: #ffff1cc6; /* Warna latar belakang dengan transparansi */
+  transition: background-color 0.3s ease; /* Transisi warna latar belakang dengan durasi 0.3 detik dan efek ease */
+  font-weight: bold; /* Mengatur tebal font menjadi bold */
+  letter-spacing: 2px; /* Mengatur jarak antar huruf */
+  font-family: 'Times New Roman', Times, serif; /* Memilih jenis font */
+  font-size: 20px; /* Ukuran font */
+}
+
+.login-form button:hover {
+  background-color: transparent; /* Mengubah warna latar belakang tombol menjadi transparan saat dihover */
+  color: white; /* Mengubah warna teks menjadi putih */
+  font-weight: bold; /* Mengatur tebal font menjadi bold */
+  letter-spacing: 2px; /* Mengatur jarak antar huruf */
+  font-family: 'Times New Roman', Times, serif; /* Memilih jenis font */
+  font-size: 20px; /* Ukuran font */
+}
+
+.input-group {
+  margin-bottom: 15px; /* Margin bawah sebesar 15 piksel */
+}
+
+.input-group label {
+  display: block; /* Menjadikan label sebagai blok elemen */
+  margin-bottom: 5px; /* Margin bawah sebesar 5 piksel */
+  margin-right: 190px; /* Margin kanan sebesar 190 piksel */
+  color: #d9ebd9; /* Mengatur warna teks label */
+}
+
+.input-group input {
+  width: calc(100% - 50px); /* Mengurangi padding kiri dan kanan dari input */
+  padding: 8px; /* Tetapkan padding atas dan bawah */
+  padding-left: 10px; /* Tetapkan padding kiri */
+  border: 1px solid #ccc; /* Menetapkan border dengan warna abu-abu */
+  border-radius: 5px; /* Mengatur sudut border menjadi sedikit bulat */
+}

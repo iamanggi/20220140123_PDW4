@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- menghubungkan antara css dengan html -->
+    <link rel="stylesheet" href="style/style.css">
+    <!-- memberikan judul pada halaman web  -->
+    <title>Pertemuan 3 PDW</title> 
+</head>
+<body>
+    <!-- membuat class dengan nama hero -->
+    <div class="Hero">
+        <!-- membuat class dengan nama main -->
+        <div class="main">
+            <!--menyisipkan gambar ke dalam halaman web  -->
+        <img src="assets/BG2.png" alt="bg"/>
+    </div>
+    <!-- membuat class dengan nama container -->
+    <div class="container">
+        <!-- membuat class dengan nama card -->
+        <div class="card">
+            <!-- menyisipkan gambar ke dalam halaman web -->
+        <img src="assets/Gambarr.png" alt="Gambar">
+        <div class="text">
+            <!-- memberikan heading dan paragraf -->
+            <!-- h1 untuk heading 1, span digunakan untuk memberikan gaya yang berbeda dengan h1-->
+            <h1>Tinker <span> Bell</span></h1>
+            <!--  p untuk paragraph -->
+            <p> Tinker Bell adalah peri dengan bakat untuk memperbaiki hal-hal yang rusak. Dia adalah peri yang hangat, baik hati, dan menyenangkan yang akan selalu ada untuk teman-temannya dalam keadaan apa pun.</p>
+        </div>
+        </div><div class="login-form">
+            <!-- Judul "Login" -->
+            <h2>Login</h2> 
+            <!-- Grup input untuk username -->
+            <div class="input-group"> 
+                <!-- Label untuk input username -->
+                <label for="username">Username:</label> 
+                <!-- Input text untuk input username -->
+                <input type="text" id="username" name="username" required> 
+            </div>
+            <!-- Grup input untuk password -->
+            <div class="input-group"> 
+                <!-- Label untuk input Password -->
+                <label for="password">Password:</label> 
+                <!-- Input password untuk input password -->
+                <input type="password" id="password" name="password" required> 
+            </div>
+            <!-- Tombol submit untuk Login -->
+            <button onclick="validate()" type="submit">Login</button> 
+            <!-- Paragraf untuk menampilkan waktu -->
+            <p id="waktu"></p> 
+        </div> 
+        
+    </div>
+    <!-- Membuat script javascript untuk mengatur waktu -->
+    <SCript src="./script/main.js"></SCript>
+</div>
+</body>
+</html>
